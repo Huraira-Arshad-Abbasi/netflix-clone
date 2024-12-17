@@ -1,0 +1,120 @@
+/* Base styles remain unchanged */
+
+/* Small devices: Phones */
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav img {
+        width: 150px;
+    }
+
+    nav button {
+        padding: 8px 15px;
+    }
+
+    main .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    main .container .text h2 {
+        font-size: 2rem;
+    }
+
+    main .container .text p {
+        font-size: 1rem;
+    }
+
+    main .container .input-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    main .container .input-box input {
+        width: 100%;
+    }
+
+    .container .left,
+    .container .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .left h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .container .left p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .container .right img {
+        width: 100%;
+    }
+
+    .c-6 .card {
+        width: 90%;
+    }
+
+    footer .footer .content ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    footer .footer {
+        height: auto;
+    }
+}
+
+/* Medium devices: Tablets */
+@media screen and (max-width: 1024px) {
+    main .container {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    main .container .input-box input {
+        width: 60vw;
+    }
+
+    .container .left,
+    .container .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .right img {
+        width: 100%;
+    }
+
+    footer .footer .content ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Large devices: Desktops */
+@media screen and (min-width: 1025px) {
+    main .container {
+        flex-direction: row;
+    }
+
+    .container .left,
+    .container .right {
+        width: 45%;
+    }
+
+    .container .right video {
+        left: 12%;
+        top: 15%;
+        width: 75%;
+    }
+}

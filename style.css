@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+ header{
+    padding: 20px 10px;
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+ }
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    padding: 0px 22px;
+    margin: auto;
+}
+nav button{
+    background-color: rgb(153,22,29);
+    font-family: sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: rgba(255,255,255);
+}
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    position: relative;
+    background-color: black;
+}
+main .container:first-child{
+    flex-direction: column;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    padding-top: 70px;
+    height: 85vh;
+}
+main .container .box{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-color: black;
+    z-index: 0;
+}
+main .container .text{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+   height: 23vh;
+}
+main .container .text h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+main .container .text p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+main .container .text :last-child{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+main .container .input-box{
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+main .container .input-box input{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40vw;
+    height: 50px;
+    padding: 20px;
+    color: white;
+}
+main .container .input-box  button{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid gray;
+    /* padding: 5px; */
+    border-radius: 5px;
+    height: 50px;
+    width: 180px;
+    color: white;
+    background-color: red;
+    /* font-weight: 800; */
+    font-size: 25px;
+}
+.saparation{
+    z-index: 20;
+    height: 8px;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.162);
+}
+.container .left{
+    width: 40vw;
+    height: 40vh;
+    /* background-color: rgb(49, 58, 30); */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   justify-content: center;
+}
+.container .left h2{
+    padding: 20px 10px;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: start;
+    
+}
+.container .left p{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: start;
+    padding-right: 10px;
+}
+.container .right{
+    width: 40vw;
+    position: relative;
+    /* background-color: aqua; */
+   
+}
+
+.container .right img{
+    position: relative;
+    z-index: 20;
+   
+}
+.container .right video{
+    position: absolute;
+    top: 23%;
+    left: 14%;
+    z-index: 10;
+   
+}
+.c-6{
+    flex-direction: column;
+    min-height: 110vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.c-6 .input .text{
+    height: auto;
+    padding: 20px 0px;
+}
+.c-6 .input .input-box{
+    justify-content: center;
+}
+.c-6 .card{
+    width: 75vw;
+}
+.c-6 .card > h2{
+    margin: 30px 0px;
+    font-size: 48px;
+    font-weight: 900;
+}
+.c-6 .card .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45,45,45);
+    height: 70px;
+    margin: 10px 0px;
+    padding: 15px;
+}
+.c-6 .card .row p{
+    font-size: 24px;
+    font-weight: 400;
+    
+}
+.c-6 .card .row p:last-child{
+    font-size: 50px;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+    position: relative;
+    background-color: black;
+}
+footer .footer{
+    width: 80vw;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer .footer a{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.7);
+}
+footer .footer .upper{
+    text-align: start;
+}
+footer .footer .content ul{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    row-gap: 18px;
+}
+footer .footer .content ul li{
+    list-style: none;
+    justify-self: start;
+}
+
+footer .footer .lower{
+    text-align: start;
+    padding: 10px 0px;
+}
+footer .footer .lower > button{
+    background-color: transparent;
+    border: none;
+    color: rgb(215, 198, 198);
+    border: 1px solid rgb(215, 198, 198);
+    border-radius: 4px;
+    padding: 5px 10px;
+}
